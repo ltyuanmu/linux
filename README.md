@@ -51,3 +51,8 @@ tnode5   Ready                      <none>   356d   v1.10.5
 tnode6   Ready                      <none>   248d   v1.10.5
 
 ```
+
+### 时间同步
+```
+ntpdate time.nist.gov
+```
