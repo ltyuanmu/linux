@@ -56,3 +56,6 @@ tnode6   Ready                      <none>   248d   v1.10.5
 ```
 ntpdate time.nist.gov
 ```
+
+### 批量删除pod
+kubectl get pods | grep Evicted | awk '{print $1}' | xargs kubectl delete pod
