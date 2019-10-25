@@ -59,3 +59,10 @@ ntpdate time.nist.gov
 
 ### 批量删除pod
 kubectl get pods | grep Evicted | awk '{print $1}' | xargs kubectl delete pod
+
+### k8s强制删除pod
+kubectl delete pods <pod> --grace-period=0 --force
+
+### k8s查看节点信息状况
+kubectl describe node <node>
+
